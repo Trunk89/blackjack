@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blackjack</title>
+    <meta name="dcterms.rights" content="Statement of copyright">
+    <meta name="dcterms.dateCopyrighted" content="2014">
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="HandheldFriendly"           content="true"/>
+    <meta name="apple-touch-fullscreen"     content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- @if NODE_ENV == 'DEVELOPMENT' -->
+    <link rel='stylesheet' type='text/css' href='dev/css/blackjack.css'>
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV == 'PRODUCTION' -->
+    <link rel='stylesheet' type='text/css' href='css/Blackjack.min.css'>
+    <!-- @endif -->
+</head>
+<body>
+<div class="blackjack"></div>
+
+    <!-- @if NODE_ENV == 'DEVELOPMENT' -->
+
+    <script src='dev/js/Blackjack.js'></script>
+    <script src="dev/js/libs/md5.js"></script>
+    <script src='dev/js/utils/utils.js'></script>
+    <script src='dev/js/models/Board.js'></script>
+    <script src='dev/js/models/Deck.js'></script>
+    <script src='dev/js/models/Card.js'></script>
+    <script src='dev/js/models/Player.js'></script>
+    <script src='dev/js/extends/DealerPlayer.js'></script>
+    <script src='dev/js/controllers/Controller.js'></script>
+
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV == 'PRODUCTION' -->
+
+    <script src='js/Blackjack.min.js'></script>
+
+    <!-- @endif -->
+
+    <script>
+        var bjelem = document.getElementsByClassName('blackjack')[0];
+        Blackjack.init(bjelem);
+    </script>
+</body>
+</html>
