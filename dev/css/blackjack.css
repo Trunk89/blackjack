@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.blackjack-game-container.wrapper {
+.blackjack-game-container.blackjack-wrapper {
     min-width: 300px;
     max-width: 600px;
     position: relative;
@@ -215,7 +215,7 @@
         margin: 5px 10px;
     }
 
-    .blackjack-game-container.wrapper {
+    .blackjack-game-container.blackjack-wrapper {
         width: 85%;
     }
 

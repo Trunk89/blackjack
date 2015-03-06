@@ -15,7 +15,7 @@ Blackjack.Controller = (function () {
 
     controller.init = function (container) {
         var template =
-            "<div class='wrapper blackjack-game-container'><div class='buttons'><input type='button' class='stick-button' value='Stand' onclick='Blackjack.Controller.stand();' disabled>" +
+            "<div class='blackjack-wrapper blackjack-game-container'><div class='buttons'><input type='button' class='stick-button' value='Stand' onclick='Blackjack.Controller.stand();' disabled>" +
             "<input type='button' class='hit-button' value='Hit' onclick='Blackjack.Controller.hit();' disabled></div><div class='board'>" +
             "<div class='tags player-name'><div class='scores'><span class='player-total-score'>-</span><span class='player-current-hand'>-</span></div></div>" +
             "<div id='player-cards' class='cards player'></div><div class='tags dealer-name'><div class='scores'>" +
