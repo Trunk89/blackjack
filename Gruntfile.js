@@ -123,7 +123,7 @@ module.exports = function(grunt) {
     });
 
     // this would be run by typing "grunt test" on the command line
-    grunt.registerTask('test', ['jshint', 'jasmine']);
+    grunt.registerTask('test', ['jshint', 'jasmine:dev']);
 
 // the default task can be run just by typing "grunt" on the command line
     grunt.registerTask('build', ['jshint', 'env:dev', 'preprocess:dev', 'env:prod', 'preprocess:prod', 'concat', 'uglify', 'cssmin', 'jasmine:min']);
